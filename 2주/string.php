@@ -29,10 +29,13 @@
 	echo strip_tags('<a href="www.naver.com">네이버</a>');
 	br();
 
-	// 이스케이프 처리하기
+	// 특수문자 엔티티코드로 처리하기
 	echo htmlspecialchars('<a href="www.naver.com">네이버</a>', ENT_QUOTES);
 	// echo htmlspecialchars("<a href="www.naver.com">네이버</a>", ENT_QUOTES);
 	br();
+
+	// 이스케이프 처리하기
+	echo addslashes('"사과","귤","감","밤"');
 
 	// 개행코드 줄바꿈
 	echo nl2br(
@@ -41,7 +44,6 @@
 		합니다."
 	);
 	br();
-	echo addslashes('"사과","귤","감","밤"');
 
 
 
